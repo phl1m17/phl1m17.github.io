@@ -16,6 +16,7 @@ header {
     background: rgba(255, 255, 255, 0.0);
     backdrop-filter: blur(10px);
     overflow: hidden;
+    z-index: 100;
 }
 
 .header {
@@ -55,6 +56,7 @@ header {
     z-index: 1000;
     color: rgb(2, 45, 45);
     background: rgba(255, 255, 255, 0.0);
+    background-image: linear-gradient(to top right, rgba(111, 214, 255,0.6), rgba(191, 240, 152,0.6));
     backdrop-filter: blur(10px);
     font-size: 50px;
     font-weight: 500;
@@ -209,6 +211,7 @@ a {
     color: (2, 45, 45);
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease-in;
 }
 .line{
     margin: 0px;
@@ -219,8 +222,12 @@ a {
 .projects-body{
     padding: 0px;
 }
+.projects p:hover{
+    transform: scale(1.03);
+}
 
-@media (min-width: 769px) {
+
+@media (min-width: 980px) {
     footer{
         margin: 0px 350px;
     }
@@ -232,12 +239,15 @@ a {
         margin-top: 180px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 982px) {
+    .body{
+        margin-top: 140;
+    }
     .body .name {
-        font-size: 60px;
+        font-size: 100px;
     }
     .body .i-am{
-        font-size: 40px;
+        font-size: 80px;
     }
     .me {
         width: 40%;
@@ -245,7 +255,59 @@ a {
     .image{
         margin: 20px 20px;
     }
+    .image .me{
+        transform: scale(1.1);
+    }
     .show{
         font-size: 35px;
+    }
+    .image{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .about .intro{
+        font-size: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    main{
+        margin-top: 130px;
+    }
+    hr{
+        margin-top: 300px;
+    }
+    .header p{
+        font-size: 70px;
+    }
+    .header .menu{
+        transform: scale(1.7);
+        margin: 10px;
+    }
+    .projects p{
+        font-size: 80px;
+    }
+    .footer-line{
+        margin-top: 1000px;
+    }
+    .header p:hover {
+        font-size: 71px;
+    }
+    .menu:hover {
+        transform: scale(2.0);
+    }
+    .tabs{
+        margin-top: 40px;
+    }
+    span{
+        font-size: 90px;
+    }
+    .show{
+        margin-top: 20px;
+    }
+    footer img{
+        transform: scale(2.5);
+    }
+    footer{
+        margin: 40px 90px 40px 90px;
     }
 }
