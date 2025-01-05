@@ -225,6 +225,10 @@ a {
 .projects p:hover{
     transform: scale(1.03);
 }
+.download{
+    font-size: 20px;
+    margin: 0px 0px 80px 0px;
+}
 
 
 @media (min-width: 980px) {
@@ -290,7 +294,7 @@ a {
         margin-top: 1000px;
     }
     .header p:hover {
-        font-size: 70px;
+        font-size: 71px;
     }
     .menu:hover {
         transform: scale(2.0);
@@ -309,5 +313,8 @@ a {
     }
     footer{
         margin: 40px 90px 40px 90px;
+    }
+    .download{
+        font-size: 10px;
     }
 }
