@@ -226,10 +226,21 @@ a {
     transform: scale(1.03);
 }
 .download{
-    font-size: 20px;
+    font-size: 30px;
     margin: 0px 0px 80px 0px;
 }
 
+
+/*
+    Extracurriculars
+*/
+.extras{
+    margin-bottom: 10px;
+}
+.extra {
+    font-size: 20px;
+    margin-top: 0px;
+}
 
 @media (min-width: 980px) {
     footer{
@@ -287,8 +298,17 @@ a {
         transform: scale(1.7);
         margin: 10px;
     }
-    .projects p{
+    .extracurriculars .projects .extra p{
+        font-family: 10px;
+    }
+    .projects {
         font-size: 80px;
+    }
+    .download {
+        font-size: 50px;
+    }
+    .extra {
+        font-size: 50px
     }
     .footer-line{
         margin-top: 1000px;
@@ -313,8 +333,5 @@ a {
     }
     footer{
         margin: 40px 90px 40px 90px;
-    }
-    .download{
-        font-size: 10px;
     }
 }
