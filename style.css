@@ -298,9 +298,6 @@ a {
         transform: scale(1.7);
         margin: 10px;
     }
-    .extracurriculars .projects .extra p{
-        font-family: 10px;
-    }
     .projects {
         font-size: 80px;
     }
@@ -308,7 +305,8 @@ a {
         font-size: 50px;
     }
     .extra {
-        font-size: 50px
+        font-size: 50px;
+        margin-top: 0px;
     }
     .footer-line{
         margin-top: 1000px;
