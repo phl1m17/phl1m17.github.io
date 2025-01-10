@@ -229,7 +229,29 @@ a {
     font-size: 30px;
     margin: 0px 0px 80px 0px;
 }
-
+.gameImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+}
+.SteveRun{
+    width: 500px; 
+    margin-bottom: 50px; 
+    border-radius: 20px;
+}
+.RotLingo{
+    width: 380px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.PokeMath{
+    width: 400px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
 
 /*
     Extracurriculars
@@ -240,6 +262,15 @@ a {
 .extra {
     font-size: 20px;
     margin-top: 0px;
+}
+.title {
+    font-size: 95px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+.title p{
+    margin: 0px;
 }
 
 @media (min-width: 980px) {
@@ -305,8 +336,7 @@ a {
         font-size: 50px;
     }
     .extra {
-        font-size: 50px;
-        margin-top: 0px;
+        font-size: 50px
     }
     .footer-line{
         margin-top: 1000px;
@@ -331,5 +361,11 @@ a {
     }
     footer{
         margin: 40px 90px 40px 90px;
+    }
+    .SteveRun{
+        width: 800px;
+    }
+    .RotLingo{
+        width: 400px;
     }
 }
