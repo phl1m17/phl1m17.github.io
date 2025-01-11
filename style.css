@@ -229,6 +229,18 @@ a {
     font-size: 30px;
     margin: 0px 0px 80px 0px;
 }
+.downloader {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center; 
+}
+.downloader a{
+    margin: 0px 0px 50px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
 .gameImg{
     display: flex;
     flex-direction: row;
@@ -236,6 +248,9 @@ a {
     align-items: center;
     border-radius: 20px;
     gap: 20px;
+}
+.gameImg img{
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .SteveRun{
     width: 500px; 
@@ -332,8 +347,16 @@ a {
     .projects {
         font-size: 80px;
     }
-    .download {
+    .downloader {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .download p{
         font-size: 50px;
+        margin: 0px 0px 50px 0px;
+    }
+    .downloader a{
+        margin: 0px;
     }
     .extra {
         font-size: 50px
