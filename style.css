@@ -227,7 +227,7 @@ a {
 }
 .download{
     font-size: 30px;
-    margin: 0px 0px 80px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .downloader {
     display: flex;
@@ -267,6 +267,11 @@ a {
     border-radius: 20px;
     margin-bottom: 50px;
 }
+.description p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin-top: -55px;
+}
 
 /*
     Extracurriculars
@@ -295,9 +300,6 @@ a {
     .about p{
         padding: 60px 130px 10px 130px;
         font-size: 25px;
-    }
-    .footer-line{
-        margin-top: 180px;
     }
 }
 @media (max-width: 982px) {
@@ -362,7 +364,7 @@ a {
         font-size: 50px
     }
     .footer-line{
-        margin-top: 1000px;
+        margin-top: 80px;
     }
     .header p:hover {
         font-size: 71px;
@@ -390,5 +392,9 @@ a {
     }
     .RotLingo{
         width: 400px;
+    }
+    .description p{
+        font-size: 30px;
+        margin-top: -30px;
     }
 }
