@@ -50,7 +50,8 @@
                             </p>
                         </a>
                         <div class="gameImg">
-                            <img src="images/SteveRun.png" class="SteveRun">
+                            <img src="images/SteveRun.png" class="SteveRun"
+                            alt="Project 1" onclick="openModal(this.src)">
                         </div>
                     </div>
                     <hr class="line">
@@ -61,8 +62,11 @@
                             </p>
                         </a>
                         <div class="gameImg">
-                            <img src="images/RotLingo0.png" class="RotLingo">
-                            <img src="images/RotLingo1.png" class="RotLingo">
+                            <img src="images/RotLingo0.png" class="RotLingo"
+                            alt="Project 2" onclick="openModal(this.src)">
+
+                            <img src="images/RotLingo1.png" class="RotLingo"
+                            alt="Project 3" onclick="openModal(this.src)">
                         </div>
                     </div>
                     <hr class="line">
@@ -73,8 +77,11 @@
                             </p>
                         </a>
                         <div class="gameImg">
-                            <img src="images/PokeMath0.png" class="PokeMath">
-                            <img src="images/PokeMath1.png" class="PokeMath">
+                            <img src="images/PokeMath0.png" class="PokeMath"
+                            alt="Project 4" onclick="openModal(this.src)">
+
+                            <img src="images/PokeMath1.png" class="PokeMath"
+                            alt="Project 5" onclick="openModal(this.src)">
                         </div>
                         <div class="downloader">
                             <a href="https://github.com/phl1m17/Advance-Functions-Game/raw/refs/heads/main/PokeMath.jar" download class="download">
@@ -112,6 +119,10 @@
                     </div>
                 </div>
             </div>
+            <div id="modal" style="display:none;" class="bigImage">
+                <span onclick="closeModal()" style="cursor:pointer;" class="xButton">&times;</span>
+                <img id="modal-img" style="width:100%;">
+            </div>
         </main>
         <div>
             <hr class="footer-line">
@@ -127,24 +138,5 @@
                 <img src="images/github.svg">
             </a>
         </footer>
-        <script>
-            const image = document.getElementById('toggleImage');
-            const content = document.getElementById('hiddenContent');
-
-            image.addEventListener('click', () => {
-                if (content.classList.contains('show')) {
-                    content.classList.add('fadeOut');
-
-                    setTimeout(() => {
-                        content.classList.remove('show');
-                        content.classList.remove('fadeOut');
-                        content.style.display = 'none';
-                    }, 500);
-                } else {
-                    content.style.display = 'block';
-                    content.classList.add('show');
-                }
-            });
-        </script>
-    </body>
+    </body><script src="script.js"></script>
 </html>

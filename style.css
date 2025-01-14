@@ -272,6 +272,17 @@ a {
     font-size: 20px;
     margin-top: -55px;
 }
+.bigImage{
+    position: fixed;
+    width: 50%;
+}
+.bigImage img{
+    border-radius: 20px;
+}
+.xButton {
+    color: rgb(26, 26, 27);
+    font-size: 50px;
+}
 
 /*
     Extracurriculars
