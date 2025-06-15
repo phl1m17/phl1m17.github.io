@@ -8,7 +8,7 @@ function ExtracurricularsSection() {
         <span
           style={{
             color: "#ff6f61",
-            fontWeight: 600,
+            fontWeight: 300,
             fontStyle: "italic",
           }}
         >
@@ -18,7 +18,7 @@ function ExtracurricularsSection() {
         <span
           style={{
             color: "#ff6f61",
-            fontWeight: 600,
+            fontWeight: 300,
             fontStyle: "italic",
           }}
         >
@@ -28,7 +28,7 @@ function ExtracurricularsSection() {
         <span
           style={{
             color: "#f5a623",
-            fontWeight: 600,
+            fontWeight: 300,
             fontStyle: "italic",
           }}
         >
@@ -38,7 +38,7 @@ function ExtracurricularsSection() {
         <span
           style={{
             color: "#4a90e2",
-            fontWeight: 600,
+            fontWeight: 300,
             fontStyle: "italic",
           }}
         >
