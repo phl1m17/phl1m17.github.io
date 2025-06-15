@@ -54,7 +54,7 @@ function LanguagesSection() {
         >
           CSS
         </span>
-        , and{" "}
+        ,{" "}
         <span
           style={{
             color: "#f7df1e",
@@ -64,7 +64,7 @@ function LanguagesSection() {
         >
           JavaScript
         </span>
-        ,{" "}
+        , and{" "}
         <span
           style={{
             color: "#0284c7",
