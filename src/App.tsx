@@ -14,16 +14,21 @@ import LanguagesSection from "./pages/Home/LanguagesSection";
 import ExtracurricularsSection from "./pages/Home/ExtracurricularsSection";
 
 import ProjectsPage from "./pages/Projects/ProjectsPage";
-import PhotographyPage from "./pages/Photography/PhotographyPage";
+import PhotographyPage from "./pages/VisualMediaPage/VisualMediaPage";
 
 import "./App.css";
 
 function MainContent() {
   const location = useLocation();
   const isProjects = location.pathname === "/projects";
+  const isPhotography = location.pathname === "/photography";
 
   return (
-    <main className={isProjects ? "projects-main" : ""}>
+    <main
+      className={
+        isProjects ? "projects-main" : isPhotography ? "photography-main" : ""
+      }
+    >
       <Routes>
         <Route
           path="/"

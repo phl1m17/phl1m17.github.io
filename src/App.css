@@ -63,7 +63,6 @@ section h2 {
 
 section p {
   font-weight: 100;
-  text-align: justify;
   margin: 0;
 }
 
@@ -83,14 +82,22 @@ section hr {
   main.projects-main {
     width: 90%;
   }
+  main.photography-main {
+    width: 95%;
+  }
 }
 
 @media (min-width: 1200px) {
   main {
     width: 50%;
+    transition: width 1s ease-in-out;
   }
 
   main.projects-main {
     width: 80%;
+  }
+  main.photography-main {
+    width: 98%;
+    padding: 0px;
   }
 }
