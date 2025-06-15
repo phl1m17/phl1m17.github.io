@@ -36,7 +36,7 @@ function Footer() {
           <SiLeetcode />
         </a>
         <a
-          href="mailto:clarkmanag@gmail.com"
+          href="mailto:hello@philm.dev"
           className="icon-link"
           aria-label="Email"
         >
