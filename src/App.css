@@ -47,6 +47,11 @@ main {
   width: 100%;
 }
 
+main.projects-main {
+  padding: 0 10px 20px;
+  width: 100%;
+}
+
 section {
   margin: 20px 0 40px;
 }
@@ -74,10 +79,18 @@ section hr {
     width: 80%;
     margin: 0 auto;
   }
+
+  main.projects-main {
+    width: 90%;
+  }
 }
 
 @media (min-width: 1200px) {
   main {
-    width: 55%;
+    width: 50%;
+  }
+
+  main.projects-main {
+    width: 80%;
   }
 }

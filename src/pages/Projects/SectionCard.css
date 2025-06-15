@@ -11,6 +11,7 @@
   }
 }
 
+/* SectionCard styles */
 .section-card {
   break-inside: avoid;
   background-color: var(--bg-color);
@@ -47,5 +48,5 @@
 }
 
 .section-links a:hover {
-  color: var(--nav-link-hover);
+  color: var(--link-hover);
 }

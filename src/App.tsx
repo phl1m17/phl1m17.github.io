@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
 import Header from "./components/Header";
 import Nav from "./components/Nav";
@@ -13,6 +18,30 @@ import PhotographyPage from "./pages/Photography/PhotographyPage";
 
 import "./App.css";
 
+function MainContent() {
+  const location = useLocation();
+  const isProjects = location.pathname === "/projects";
+
+  return (
+    <main className={isProjects ? "projects-main" : ""}>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <AboutSection />
+              <LanguagesSection />
+              <ExtracurricularsSection />
+            </>
+          }
+        />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/photography" element={<PhotographyPage />} />
+      </Routes>
+    </main>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -22,22 +51,8 @@ function App() {
           <Nav />
         </div>
 
-        <main>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <AboutSection />
-                  <LanguagesSection />
-                  <ExtracurricularsSection />
-                </>
-              }
-            />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/photography" element={<PhotographyPage />} />
-          </Routes>
-        </main>
+        <MainContent />
+
         <br />
         <br />
         <br />
