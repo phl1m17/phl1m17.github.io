@@ -20,6 +20,7 @@
   padding: 20px;
   color: var(--text-color);
   transition: all 0.3s ease;
+  font-weight: 100;
 }
 
 .section-card h3 {
