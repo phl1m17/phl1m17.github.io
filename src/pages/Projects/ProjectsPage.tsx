@@ -63,7 +63,7 @@ const projects = [
 
 function ProjectsPage() {
   return (
-    <div>
+    <div className="projects-grid">
       {projects.map((project, idx) => (
         <SectionCard
           key={idx}
@@ -73,7 +73,7 @@ function ProjectsPage() {
           image={project.image}
           githubLink={project.githubLink}
           liveLink={project.liveLink}
-        ></SectionCard>
+        />
       ))}
     </div>
   );

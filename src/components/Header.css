@@ -16,6 +16,7 @@ header h1 {
 header h1 a {
   color: inherit;
   text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
 nav {
@@ -50,11 +51,12 @@ nav a,
   margin-top: 2px;
 }
 
+header h1 a:hover,
 nav a.active,
 nav a.hovered,
 .dark-mode-button:hover {
-  background-color: var(--nav-link-hover-bg);
-  color: var(--nav-link-hover);
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover);
   transform: scale(1.1);
 }
 
