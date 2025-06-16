@@ -47,7 +47,12 @@ const SectionCard: React.FC<SectionCardProps> = ({
 
       {image && (
         <div className="section-image-wrapper">
-          <img src={image} alt={title} className="section-image" />
+          <img
+            src={image}
+            alt={title}
+            className="section-image"
+            loading="lazy"
+          />
         </div>
       )}
     </div>

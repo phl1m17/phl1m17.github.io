@@ -45,4 +45,10 @@
   height: auto;
   display: block;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.media-image.loaded {
+  opacity: 1;
 }

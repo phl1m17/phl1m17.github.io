@@ -63,7 +63,7 @@ const projects = [
 
 function ProjectsPage() {
   return (
-    <div className="projects-grid">
+    <div className="projects-grid fade-slide-in">
       {projects.map((project, idx) => (
         <SectionCard
           key={idx}
