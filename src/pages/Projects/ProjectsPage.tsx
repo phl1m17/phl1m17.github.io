@@ -1,6 +1,7 @@
 import SectionCard from "./SectionTemp";
 import { FaJava } from "react-icons/fa";
 import { MdWeb } from "react-icons/md";
+import GuitarTuner from "./PitchFinder";
 
 const projects = [
   {
@@ -75,6 +76,7 @@ function ProjectsPage() {
           liveLink={project.liveLink}
         />
       ))}
+      <GuitarTuner />
     </div>
   );
 }

@@ -13,21 +13,21 @@
 
 .section-card {
   break-inside: avoid;
-  background-color: var(--bg-color);
+  background: var(--bg-color);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  margin-bottom: 30px;
   padding: 20px;
+  margin-bottom: 30px;
   color: var(--text-color);
-  transition: all 0.3s ease;
   font-weight: 100;
+  transition: all 0.3s ease;
 }
 
 .section-card h3 {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin: 0px 0px 12px 0px;
+  margin-bottom: 12px;
   font-weight: 300;
   font-size: 1.4rem;
 }
@@ -35,9 +35,9 @@
 .section-image {
   width: 100%;
   height: auto;
+  margin: 16px 0;
   border-radius: 8px;
   border: 1px solid var(--border-color);
-  margin: 16px 0;
 }
 
 .section-links a {
@@ -62,4 +62,37 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app button {
+  height: 40px;
+  margin: 0 10%;
+  border: none;
+  border-radius: 10px;
+  background: var(--hover-bg);
+  color: var(--text-color);
+  font: 20px Inter, sans-serif;
+  transition: transform 0.2s ease-in;
+}
+
+.app button:hover {
+  transform: scale(1.05);
+  background: var(--link-hover);
+}
+
+.note {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.note.detected {
+  font-weight: bold;
 }
