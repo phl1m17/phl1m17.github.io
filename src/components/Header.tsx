@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <header>
       <h1>
-        <Link to="/">phl1m17</Link>
+        <a href="/">phl1m17</a>
       </h1>
     </header>
   );
