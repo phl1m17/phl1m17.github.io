@@ -2,9 +2,10 @@ import React, { useState } from "react";
 
 interface MediaCardProps {
   image?: string;
+  onClick?: () => void;
 }
 
-const MediaCard: React.FC<MediaCardProps> = ({ image }) => {
+const MediaCard: React.FC<MediaCardProps> = ({ image, onClick }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const handleImageLoad = () => {
@@ -12,7 +13,7 @@ const MediaCard: React.FC<MediaCardProps> = ({ image }) => {
   };
 
   return (
-    <div className="media-card">
+    <div className="media-card" onClick={onClick}>
       {image && (
         <div className="media-image-wrapper">
           <img
