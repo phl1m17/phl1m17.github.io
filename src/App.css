@@ -85,6 +85,11 @@ section {
 }
 
 section h2 {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+section h3 {
   font-weight: 300;
   margin-bottom: 10px;
 }

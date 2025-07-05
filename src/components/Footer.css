@@ -13,7 +13,7 @@ footer p {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 5vw;
   font-size: 1.5rem;
   margin: 0.5rem 0;
 }
@@ -24,7 +24,6 @@ footer p {
   transition: color 0.3s ease, transform 0.3s ease;
   display: inline-flex;
   align-items: center;
-  transform: scale(1.5);
 }
 
 footer hr {
@@ -36,5 +35,5 @@ footer hr {
 
 .icon-link:hover {
   color: #646cff;
-  transform: scale(1.6);
+  transform: scale(1.1);
 }
