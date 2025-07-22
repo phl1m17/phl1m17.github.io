@@ -7,7 +7,7 @@ interface MediaItem {
 }
 
 const media: MediaItem[] = [];
-for (let i = 1; i <= 19; i++) {
+for (let i = 1; i <= 25; i++) {
   media.push({ image: `/Photo/p${i}.jpg` });
 }
 
@@ -49,7 +49,6 @@ function VisualMediaPage() {
     return () => document.removeEventListener("keydown", handleKey);
   }, [currentIndex]);
 
-  // Prevent background scroll when modal is open
   useEffect(() => {
     document.body.style.overflow = currentIndex !== null ? "hidden" : "auto";
     return () => {
